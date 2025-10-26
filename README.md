@@ -1,73 +1,91 @@
-# Communicating Analysis Results
-Executive Leadership and Sales
+## Communicating Analysis Results
 
-Company: Adventures Works
-Analysis for Executives and Sales department management
+### Project Overview
 
-Link to the public Tableau dashboard:
+This Tableau dashboard was created and presented during the study period at Turing College. The project focused on analyzing company performance over a three-year period using data from the fictitious company *AdventureWorks*. The goal was to evaluate historical sales data, understand business performance trends, and provide insights for executive and sales management decision-making.
 
-https://public.tableau.com/views/AdventureWorks_SalesDashboard/HomeDashboard?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
+**Tools Used:**
 
-# Analysis of Adventures Work Company Sales
+* SQL (BigQuery) for data extraction, cleaning, and aggregation
+* Excel for initial data review and exploration
+* Tableau for visualization and dashboard development
 
-# Part of ASK
+**Link to Dashboard:**
+[View Public Tableau Dashboard](https://public.tableau.com/views/AdventureWorks_SalesDashboard/HomeDashboard?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link)
 
-Chosen topic: Company sales
+##
 
-Problem: Company wants to know the general overview of sales, company performance and get more details on how the products were sold within the given period.
+### Part of ASK
 
-Question to ask:
+**Chosen Topic:** Company Sales Performance
 
-What was the company revenue and profit over a given period?
-How were sales and orders distributed across quarters of a given period?
-How sales varied across countries and product categories?
-Compare online sales versus reseller performance
+**Business Problem:**
+The company seeks an overview of sales and performance to identify revenue trends, evaluate product profitability, and understand how performance varies across regions, time periods, and sales channels.
 
-Which year was most successful and which was less for the company?
-How did the company make its profit across different selling territories?
-Which reseller was the most effective and which was not?
+**Key Questions:**
 
-Which product category is the most profitable?
-Which product subcategory and products were most lucrative?
+* What were the company’s total revenue and profit over the given period?
+* How were sales and orders distributed across quarters and years?
+* How did sales vary across countries, product categories, and subcategories?
+* How did reseller and online channels compare in terms of performance?
+* Which years were most and least successful for the company?
+* Which territories and resellers generated the highest profit?
+* Which product categories were the most profitable?
 
-# Part of PREPARE
+##
 
-Collect relevant data from AdventuresWork DB. Before analyzing data, clean and if necessary  make aggregations.
+### Part of PREPARE
 
-Data was collected from 4 module parts (Sales, HR, Persons, Products) of the company database to get data samples of sales, order details, net value, costs, products and employee data.
+**Data Collection and Preparation:**
+Relevant data was extracted from the *AdventureWorks* database. Four core modules were used:
 
-All data cleaning and pre-aggregations were made in BigQuery.
-Data was extracted in CSV format and connected as a source to Tableau
+* Sales
+* HR (Employees)
+* Persons (Customers and Resellers)
+* Products
 
+Data cleaning, transformation, and aggregation were completed using **Google BigQuery**. The cleaned datasets were then exported in **CSV** format and connected to **Tableau** for dashboard creation.
 
+##
 
+### Part of SHARE
 
-# Part of SHARE
+**Summary of Findings:**
 
-Summary of Findings:
+* The company generated approximately **$141M** in revenue and **$40M** in profit over a three-year period.
+* The most profitable period was **2003 Q3 – 2004 Q2**, with **$78M** in sales, accounting for 55% of total revenue.
+* The least successful period was **2001 Q3 – 2002 Q2**, when revenue reached only **$30M** (21% of total).
+* The **United States** was the most profitable market, while **Germany** performed the weakest.
+* The **Bikes** category was the top-performing segment, generating **86% of total revenue ($95M)**.
+* Within Bikes, **Mountain Bikes** and **Road Bikes** were leading subcategories.
+* **Accessories** had the highest number of orders and strong profit margins, indicating high demand and efficiency.
+* **Reseller sales** generated strong revenue and profit, while **online sales** excelled in order volume.
+* The best-performing salesperson was **Linda C. Mitchell**, and the lowest-performing was **Syed E. Abbas**.
+* The top-selling individual product was **Mountain-200 Black (size 38)**.
 
-Company made approximately a total of $141M revenue from which as a profit $40M was generated across a 3 year period.
-In terms of total revenue and orders placed, the most valuable period for the company was 2003 Q3 - 2004 Q2 period. These quarters produced around $78M sales revenue which was 55% of company all revenue and concluded almost 25K orders which made up 77% part of all orders through the given period. The least sales and orders company made through 2001 Q3 - 2002 Q2 quarters. Revenue from sales was $30M which was 21% of total revenue and the company was able to settle just less than 3K orders that was >9% of all orders.
-The most valuable country in terms of revenue and profit was the United States and the least profitable country was Germany. Sales made in America made more than 50% of total companies revenue and profit.
-The biggest revenue came from selling the bikes as it made 86% of all sales revenue (or gained $95M total revenue). Components, clothes and accessories took a minor part of company sales.
-The biggest revenue and profit was made through company resellers while online shopping was successful in the amount of orders placed which made a decent $15M profit that it’s $10M less than resellers profit.
-The successful time for company sales was in 2003. In that year, the company sold 45% of total products sold and reached 40% of all orders made. The year 2001 accounted for a small part of the company’s income, yet profitability margin was the same as in the other years, around 30% margin.
-Looking at country level, the most effective country to make profit was Australia and second - Germany. However, the biggest contributor to total profit was the United States.
-The best performer in retail sales was Linda C Mitchell, the lowest sales performer was Syed E Abbas.
-The category of Bikes proved to be the most lucrative category in terms of revenue, it made a sum of approximately $95M in revenue. That said, Mountain Bikes and Road Bikes were top performing subcategories, yielding the highest profits. However, while the Bikes yield the biggest part of the revenue and profit, other categories - Accessories, saw to be the most profit effective and the most orders placed. 
-Best selling product in the company was Mountain-200 Black, 38.
+##
 
-Screenshots of the dashboard:
+### Dashboard Previews
 
-Home view
+#### Home View
 
-![image](https://github.com/JonasLauri/AdventuresWork_Sales_Dashboard/assets/31222361/393cca5c-22b5-4000-bfa1-86758a2f7894)
+Overview of company performance, revenue, profit, and category breakdown.
+![Home View](https://github.com/JonasLauri/AdventuresWork_Sales_Dashboard/assets/31222361/393cca5c-22b5-4000-bfa1-86758a2f7894)
 
-Performance view
+#### Performance View
 
-![image](https://github.com/JonasLauri/AdventuresWork_Sales_Dashboard/assets/31222361/e8dae4f6-7e63-4ea1-a93f-f62c7226e26c)
+Detailed performance by year, territory, and sales representative.
+![Performance View](https://github.com/JonasLauri/AdventuresWork_Sales_Dashboard/assets/31222361/e8dae4f6-7e63-4ea1-a93f-f62c7226e26c)
 
-Production view
+#### Production View
 
-![image](https://github.com/JonasLauri/AdventuresWork_Sales_Dashboard/assets/31222361/8928c678-901b-4340-a038-b395567a15b8)
+Breakdown by product category, subcategory, and profitability distribution.
+![Production View](https://github.com/JonasLauri/AdventuresWork_Sales_Dashboard/assets/31222361/8928c678-901b-4340-a038-b395567a15b8)
+
+##
+
+### Key Takeaways
+
+This analysis provided a clear understanding of sales performance, key revenue drivers, and areas of improvement. The insights helped highlight top-performing regions, products, and time periods, supporting data-driven decision-making for future strategy planning.
+
 
